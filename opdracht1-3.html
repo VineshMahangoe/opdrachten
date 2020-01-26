@@ -1,0 +1,36 @@
+<html>
+<head>
+    <script>
+        var bingo = [];
+        
+        function aanvullen(){
+            var waarde = document.getElementById("waarde").value;
+            console.log(waarde);
+            var totaal = 0;
+            for(var x = 0; x < waarde.length; x++) {
+                var letter= waarde.charAt(x);
+                if (letter== "e"){
+                    totaal++;
+                }
+                if (totaal > 0){
+                    alert ("Er zit een letter e in");
+                }else{
+                    alert("Er zit geen e in");
+                }
+                alert (totaal); 
+            }
+          
+        
+        }
+    
+    
+    </script>
+<style>
+ 
+</style>
+</head>
+<body>
+<input id="waarde">
+<input id="knop" type=button value="toevoegen" onclick="aanvullen()">
+</body>
+</html>

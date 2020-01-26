@@ -1,0 +1,36 @@
+<html>
+   <head>
+       <script>
+           function klikken (){
+               var x= document.getElementById("invoer").value;
+
+               if (x== "hallo"){
+                   alert("Welkom");
+               } else if (x== "doei") {
+                   alert("Tot de volgende keer");
+               }
+               else {
+                   alert("Voer iets anders in");
+               }
+           }
+
+           
+
+           
+       </script>
+       <style>
+      
+       </style>
+   </head>
+   <body>
+
+    <p>Zeg hallo of doei</p>
+    <input id=invoer value="zeg hallo of doei"> 
+
+    <button id=knop type="button" onclick="klikken()" >Klik hier</button>
+    
+ 
+        
+      
+   </body>
+</html>
